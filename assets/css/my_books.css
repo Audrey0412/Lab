@@ -1,0 +1,23 @@
+.table-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+td, th
+{
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.book-image {
+    max-width: 50px;
+    max-height: 100px;
+}

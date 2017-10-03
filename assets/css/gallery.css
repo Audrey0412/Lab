@@ -1,0 +1,12 @@
+.pictures
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pictures img
+{
+    height: 200px;
+    margin: 10px;
+}

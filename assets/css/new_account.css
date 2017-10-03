@@ -1,0 +1,46 @@
+/* Formular */
+
+.center-class {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    width: 500px;
+}
+
+.row {
+    margin-top: 1em;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input {
+    width: 300px;
+    border: 1px solid #999;
+    font: 1em sans-serif;
+}
+
+.link
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #424242;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+}
