@@ -3,6 +3,7 @@ require_once 'assets/partial/header.php';
 
 if(empty($_SESSION['user_id'])){
     header('Location: home.php');
+    die();
 }
 
 if(isset($_FILES['image'])) {
