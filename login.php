@@ -19,7 +19,9 @@ if(isset($_POST['username'])){
         if(!empty($result['password']) && hash_equals($result['password'], crypt($_POST['password'], $result['password']))) {
 
             $_SESSION['user_id'] = $result['id'];
+            $_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
             header('Location: upload_picture.php');
+            die();
         }
         else{
             $error_message = 'User or Password is incorrect !';

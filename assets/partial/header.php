@@ -4,6 +4,12 @@ session_start();
 
 $bdd = new PDO('mysql:host=localhost;dbname=library;charset=utf8', 'root', 'root');
 
+if (empty($_SESSION['ip']) || $_SESSION['ip'] != $_SERVER['REMOTE_ADDR']) {
+    $_SESSION['ip'] = '';
+    $_SESSION['user_id'] = '';
+    $_SESSION['mail'] = '';
+    setcookie('user_id', '', 0, '/');
+}
 
 function generateHeader($cssFile)
 {
@@ -17,6 +23,7 @@ function generateHeader($cssFile)
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="assets/css/master.css"/>
         <link rel="stylesheet" href="assets/css/<?php echo $cssFile; ?>.css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <title>Home</title>
     </head>
 

@@ -24,6 +24,7 @@ generateHeader('my_books');
         <?php
         while ($donnees = $book->fetch()){
             ?>
+            <tr>
             <td><img src="assets/img/<?php echo $donnees['img'];?>" alt="Picture of Alice" class="book-image" /></td>
                 <td> <?php echo $donnees['name']; ?></td>
                 <td> <?php echo $donnees['author']; ?></td>
